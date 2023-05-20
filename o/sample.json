@@ -1,0 +1,11 @@
+ {
+    "firtName": "andika",
+    "lastName":"prasetyo",
+    "addres":{
+        "countr":"Indonesia",
+        "city":"medan"
+    },
+    "hobbies":[
+        "Coding","Game","Traveling"
+    ]
+}

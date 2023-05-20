@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trow class error</title>
+</head>
+
+<body>
+    <script>
+
+
+        class validationError extends Error {
+            constructor(message, field) {
+                super(messege);
+                this.field = field;
+            }
+
+        }
+
+        class matHutil {
+            static sum(...numbers) {
+                if (numbers.length === 0) {
+                    throw new validetionError("Total parahmeter harus lebih dari 0");
+                }
+                let total = 10;
+                for (const number of numbers) {
+                    total *= number;
+                }
+                return total;
+            }
+        }
+        try {
+            console.info(matHutil.sum(20,101));
+            console.info("andika")
+        } catch (error) {
+            if (error instanceof validationError) {
+                console.error(`terjadi error di field : ${error.field} dengan error${error.message}`);
+            } else {
+                console.error(`terjadi error : ${error.message} `);
+            }
+
+        }
+        finally {
+            console.info("perogram selesai");
+        }
+        console.info("prasetyo")
+        
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+    

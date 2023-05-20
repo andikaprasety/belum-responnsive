@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         const date1  = new Date()
+// console.info(date1); 
+
+// const date2 =new Date(2022 , 9 , 17);
+// console.info(date2); 
+
+// const date3 = new Date(2022,9,17,18,24,123);
+// console.info(date3); 
+
+// const date4= new Date(1663414047662);
+// console.info(date4); 
+//     
+    {
+        // epout && unix time
+        const date1 =new Date(1663414594327)
+console.info(date1.getTime()); 
+
+const date2 =new Date(1663414594327);
+console.info(date2.getTime()); 
+
+const date3 = new Date(1663414695014);
+console.info(date3.getTime()); 
+
+const date4= new Date(1663414047662);
+console.info(date4); 
+    }
+    {
+        //pasrsing date
+        const parsiTime = Date.parse("2022-09-19T22:25:26.123+07:00");
+        console.info(parsiTime)
+        const date=new Date(parsiTime)
+        console.info(date)
+    }
+    {
+        // date gatter dan setter
+        const dat = new Date()
+        set
+        console.info(dat.getFullYear())
+        console.info(dat.getMonth())
+        console.info(dat.getDate())
+        console.info(dat.getHours())
+        console.info(dat.getMinutes())
+        console.info(dat.getSeconds())
+        console.info(dat.getMilliseconds())
+        console.info(dat.getTimezoneOffset())
+    }
+    
+ </script>
+</body>
+</html>
